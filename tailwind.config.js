@@ -1,4 +1,7 @@
 module.exports = {
+  content: [
+    "./src/**/*.{js,ts,jsx,tsx}", // or wherever your components live
+  ],
   purge: [],
   darkMode: false, // or 'media' or 'class'
   screens: {
@@ -26,5 +29,8 @@ module.exports = {
   variants: {
     extend: {},
   },
-  plugins: [],
+  plugins: {
+    tailwindcss: {},
+    autoprefixer: {},
+  },
 };
