@@ -29,29 +29,52 @@ body {
   /* font-family: Arial, Helvetica, sans-serif; */
 }
 
+.instagram-logo{
+  width: 25px;
+  height: 25px;
+  margin-left: 8px;
+ 
+}
+
 .main-content::before{
   content: "";
   position: absolute;
   left: 0;
-  top: 390px;
-  width: 100%;
-  height: 100%;  
+  bottom:0;
+  /* width: 100%;
+  height: 60%;   */
   background-image: url('/main-circle-with-flowers.svg');
-  background-size: cover;
+  /* background-size: cover; */
   background-repeat: no-repeat;
+  background-size: 400px auto; /* scale SVG if needed */
+  background-position: -100px 0; /* shift to crop */
+  overflow: hidden; /* hide the rest */
+  width: 100%;
+  ; /* visible area width */
+  height: 200px; /* visible area height */
 }
 
-@media (min-width: 1025px) {
+@media (min-width: 420px)and (max-width:1499px) {
   .main-content::before{
-  top: 0px;
-  height: 100%;  
+  height: 350px;  
+  background-size: cover;
+
+  }
+}
+@media (min-width: 1500px) {
+  .main-content::before{
+  height: 85%;  
   background-image: url('/two-circles-with-flowers.svg');
+  background-size: cover;
+  background-position: -100px -100px; /* shift to crop */
+
+
   }
 }
 
 @media (min-width: 768px) and (orientation: portrait) {
   .main-content::before{
   background-image: url('/main-circle-with-flowers.svg');
-    top:264px
+
   }
 }
