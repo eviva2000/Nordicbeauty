@@ -19,7 +19,7 @@ export default function Hero() {
             از معتبرترین برندهای جهانی را انتخاب می‌کنیم و مستقیماً از اروپا به ایران می‌رسانیم.
             اینجا، کیفیت، اصالت و سلامت در اولویت‌اند — برای کسانی که زیبایی را جدی می‌گیرند
           </p>
-          <Link  href='https://www.instagram.com/zibanordic/'><div className="flex items-center justify-center sm:justify-end text-[#2f4f4f]"> ما را در اینستاگرام دنبال کنید <img className="instagram-logo" alt="" src='/New Project (1).svg'/></div> </Link>
+          <Link className="flex justify-end" href='https://www.instagram.com/zibanordic/'><div className="border border-inherit border-solid p-4 rounded-full  mx-auto sm:mx-0 w-3xs  flex items-center justify-center sm:justify-end text-[#2f4f4f]"> ما را در اینستاگرام دنبال کنید <img className="instagram-logo" alt="" src='/New Project (1).svg'/></div> </Link>
         </div>
       </div>
 
