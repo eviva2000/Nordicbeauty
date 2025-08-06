@@ -7,14 +7,14 @@ export default function Hero() {
     <section className="relative w-screen h-screen">
       <Navbar />
       <div className="main-content flex flex-col items-end px-6">
-        <div className=" relative mt-40 md:mt-48 lg:mt-64  xl:max-w-[800px] lg:px-20">
-          <h1 className="text-[48px] sm:text-[64px] md:text-[90px]  leading-[1]  text-[#2f4f4f] text-center sm:text-right">
+        <div className=" relative mt-30 md:mt-48 lg:mt-64  xl:max-w-[800px] lg:px-20">
+          <h1 className="text-[36px] sm:text-[64px] md:text-[90px]  leading-[1]  text-[#2f4f4f] text-center sm:text-right">
             ZibaNordic
           </h1>
           <h4 className="text-[18px] sm:text-[28px] md:text-[25px] lg:text-[30px] mt-2 text-[#2f4f4f] text-center sm:text-right">
             منتخبی از برندهای اصیل جهانی
           </h4>
-          <p className="text-right text-[#2f4f4f] mt-12 mb-8   max-w-md">
+          <p className="text-right text-[#2f4f4f] mt-12 mb-6   max-w-md">
             در زیبانوردیک، ما زیبایی را اتفاقی نمی‌دانیم. با دقت و وسواس، محصولات آرایشی و بهداشتی
             از معتبرترین برندهای جهانی را انتخاب می‌کنیم و مستقیماً از اروپا به ایران می‌رسانیم.
             اینجا، کیفیت، اصالت و سلامت در اولویت‌اند — برای کسانی که زیبایی را جدی می‌گیرند
