@@ -3,7 +3,7 @@
     margin: auto;
     --slide-height: 22rem;
     --slide-spacing: 1rem;
-    --slide-size: 50%;
+    --slide-size: 80%;
     padding-top:8rem;
     padding-bottom: 5rem;
   }
@@ -79,4 +79,8 @@
       display: flex;
   
     }
+    .embla{
+        --slide-size: 50%;
+    }
   }
+  

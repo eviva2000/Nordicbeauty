@@ -1,10 +1,6 @@
 import Link from "next/link";
 import Navbar from "./Navbar";
 import Image from "next/image";
-import { IoLogoInstagram } from "react-icons/io5"
-import { MdOutlineEmail } from "react-icons/md";
-import { HiOutlineMail } from "react-icons/hi";
-import { SiInstagram } from "react-icons/si";
 export default function Hero() {
   return (
     <section className="relative w-screen h-screen">
