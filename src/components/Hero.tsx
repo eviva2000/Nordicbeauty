@@ -12,7 +12,7 @@ export default function Hero() {
           <h1 className="text-[36px] sm:text-[64px] md:text-[80px]  leading-[1]  text-[#4f2c25]">
             ZibaNordic
           </h1>
-          <h4 className="text-[18px] sm:text-[28px] md:text-[25px] lg:text-[30px] mt-2 ">
+          <h4 className="text-[18px] sm:text-[28px] md:text-[25px] lg:text-[30px] mt-2 text-[#4f2c25] ">
             منتخبی از برندهای اصیل جهانی
           </h4>
           <p className=" mt-12 mb-6   max-w-md">
