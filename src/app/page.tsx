@@ -1,6 +1,6 @@
+import Footer from "@/components/Footer";
 import Hero from "@/components/Hero";
 import Slider from "@/components/Slider/Slider";
-
 
 //------------------ Main Page Component------------------
 export default function Home() {
@@ -8,8 +8,8 @@ export default function Home() {
     <div className="">
       <main className="">
         <Hero />
-        <Slider/>
-        <footer style={{ height: "20vh", background: "gray" }}> Placeholder for footer</footer>
+        <Slider />
+        <Footer />
       </main>
     </div>
   );
