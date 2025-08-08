@@ -82,7 +82,8 @@ const Slider: React.FC = () => {
   }, [emblaApi, tweenOpacity]);
 
   return (
-    <div className="embla">
+    <div className="embla" id='slider'>
+    <h3 className="mb-12  md:text-[30px]">  محصولات ما</h3>
       <div className="embla__viewport" ref={emblaRef}>
         <div className="embla__container">
           {SLIDES.map((index) => (
