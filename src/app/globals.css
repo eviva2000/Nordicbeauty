@@ -4,6 +4,13 @@
 
 body {
   font-size: 1rem;
+  color:#654640;
+  text-align: center;
+}
+
+h1{
+  font-family: 'Playfair Display', serif;
+  color: #693c32;
 }
 
 .instagram-logo {
@@ -12,8 +19,16 @@ body {
   margin-left: 0.5rem; /* 8px */
 }
 
+.first-fold{
+  background-image:url('/beauty-bg.png');
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: inherit;
+}
+
 .main-content{
-  transform:translateY(12rem)
+  transform:translateY(12rem);
+
 }
 
 
