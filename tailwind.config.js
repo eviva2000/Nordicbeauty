@@ -6,6 +6,7 @@ module.exports = {
     "./src/**/*.{js,ts,jsx,tsx}",
     "./pages/**/*.{js,ts,jsx,tsx}",
     "./components/**/*.{js,ts,jsx,tsx}",
+    "./app/**/*.{js,ts,jsx,tsx}", // <- for Next.js 13+ app directory
   ],
   darkMode: false, // or 'media' or 'class'
   theme: {
@@ -32,13 +33,14 @@ module.exports = {
           100: "#4f2c25",
         },
       },
+      maxWidth: {
+        "8xl": "90rem", // 1440px
+        "9xl": "100rem", // 1600px
+      },
     },
   },
   variants: {
     extend: {},
   },
-  plugins: [
-    require('tailwindcss'),
-    require('autoprefixer'),
-  ],
+  plugins: [require("tailwindcss"), require("autoprefixer")],
 };
