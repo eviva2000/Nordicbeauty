@@ -90,7 +90,7 @@ const Slider: React.FC = () => {
             <div className="embla__slide" key={index}>
               <Image
                 className="embla__slide__img"
-                src={`/test${index + 1}.jpg`}
+                src={`/prod${index + 1}.webp`}
                 alt={`Slide ${index + 1}`}
                 width={500}
                 height={500}
