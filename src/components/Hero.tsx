@@ -1,11 +1,9 @@
 import Link from "next/link";
-import Navbar from "./Navbar";
 import Image from "next/image";
 export default function Hero() {
   return (
     <section className="relative w-screen h-screen">
       <div className="first-fold">
-        <Navbar />
         <div className="flex flex-col items-center gap-12 lg:px-20 pt-32 lg:pt-48">
           <h1 className="text-[22px] md:text-[32px]  leading-[1]  text-[#4f2c25]">ZibaNordic</h1>
           <h4 className="text-[32px] sm:text-[44px] md:text-[52px] lg:text-[100px] mt-2 text-creamy-100 ">
