@@ -1,15 +1,14 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono,Playfair_Display } from "next/font/google";
+import { Geist, Geist_Mono, Playfair_Display } from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
+import Footer from "@/components/Footer";
 
 const playfair = Playfair_Display({
-  subsets: ['latin'],
-  weight: ['400', '700'],
-  variable: '--font-playfair',
-})
-
-
+  subsets: ["latin"],
+  weight: ["400", "700"],
+  variable: "--font-playfair",
+});
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -23,16 +22,15 @@ const geistMono = Geist_Mono({
 
 export const metadata = {
   title: {
-    default: 'ZibaNordic',
-    template: '%s | ZibaNordic',
+    default: "ZibaNordic",
+    template: "%s | ZibaNordic",
   },
-  description: 'منتخبی از برندهای اصیل جهانی',
+  description: "منتخبی از برندهای اصیل جهانی",
   viewport: {
-    width: 'device-width',
+    width: "device-width",
     initialScale: 1,
   },
 };
-
 
 export default function RootLayout({
   children,
@@ -42,10 +40,11 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${playfair.variable } antialiased`}
+        className={`${geistSans.variable} ${geistMono.variable} ${playfair.variable} antialiased`}
       >
         <Navbar />
-        {children}
+        <main className="flex-grow">{children}</main>
+        <Footer />
       </body>
     </html>
   );

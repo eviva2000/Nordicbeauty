@@ -1,13 +1,15 @@
-import { FaWhatsapp, FaInstagram } from "react-icons/fa";
+import { FaWhatsapp } from "react-icons/fa";
 import { MdOutlineEmail } from "react-icons/md";
 
-export default function Hero() {
+export default function Contact() {
   return (
-    <section className="relative w-screen h-screen">
+    <section className="relative w-screen h-[calc(100vh-250px)] md:h-[calc(100vh-150px)]">
       <div className="first-fold px-8 md:px-24 lg:px-32">
-        <div className="translate-y-60 max-w-5xl bg-white m-auto border-4 rounded-[50px] p-12 pb-18">
-          <h2 className="text-xl xl:text-4xl font-bold text-center mb-6 md:mb-12 xl:mb-24">تماس با ما</h2>
-          <div className="flex flex-col items-start text-left gap-2 md:gap-4 xl:gap-6">
+        <div className="flex flex-col items-center translate-y-60 max-w-5xl m-auto border-4 rounded-[50px] p-8 pb-12 xl:pt-16">
+          <h2 className="text-xl xl:text-4xl font-bold text-center mb-6 md:mb-12 xl:mb-24">
+            تماس با ما
+          </h2>
+          <div className="flex flex-col items-start text-left gap-4 md:gap-6 xl:gap-8">
             <div className="flex items-center gap-4 xl:gap-6 font-bold text-[20px] md:text-[30px] xl:text-[40px]">
               <FaWhatsapp className="w-12 md:w-16 xl:w-24 h-12 md:h-16 xl:h-24 text-[#4f2c25]" />
               <p className="text-sm md:text-xl xl:text-4xl">WhatsApp: 093722331122</p>
@@ -18,13 +20,6 @@ export default function Hero() {
             >
               <MdOutlineEmail className="w-12 md:w-16 xl:w-24 h-12 md:h-16 xl:h-24 text-[#4f2c25]" />
               <p className="text-sm md:text-xl xl:text-4xl">zibanordic@gmail.com</p>
-            </a>
-            <a
-              href="https://www.instagram.com/zibanordic/"
-              className="flex items-center gap-4 xl:gap-6 font-bold text-[20px] md:text-[30px] xl:text-[40px]"
-            >
-              <FaInstagram className="w-12 md:w-16 xl:w-24 h-12 md:h-16 xl:h-24 text-[#4f2c25]" />
-              <p className="text-sm md:text-xl xl:text-4xl">@zibanordic</p>
             </a>
           </div>
         </div>
