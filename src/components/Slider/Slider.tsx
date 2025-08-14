@@ -15,7 +15,7 @@ const numberWithinRange = (number: number, min: number, max: number): number =>
   Math.min(Math.max(number, min), max);
 
 const Slider: React.FC = () => {
-  const SLIDE_COUNT = 3;
+  const SLIDE_COUNT = 2;
   const SLIDES = Array.from({ length: SLIDE_COUNT }, (_, i) => i);
   const OPTIONS: EmblaOptionsType = { loop: true };
 
@@ -83,20 +83,28 @@ const Slider: React.FC = () => {
 
   return (
     <div className="embla" id='slider'>
-    <h3 className="mb-12  md:text-[30px]">  محصولات ما</h3>
+    <h3 className=" text-3xl mb-12">  محصولات ما</h3>
       <div className="embla__viewport" ref={emblaRef}>
         <div className="embla__container">
-          {SLIDES.map((index) => (
-            <div className="embla__slide" key={index}>
-              <Image
-                className="embla__slide__img"
-                src={`/prod${index + 1}.webp`}
-                alt={`Slide ${index + 1}`}
-                width={500}
-                height={500}
-              />
-            </div>
-          ))}
+        {SLIDES.map((index) => (
+  <div className="embla__slide" key={index}>
+    <Image
+      className="embla__slide__img"
+      src={`/prod${index + 1}.webp`}
+      alt={`Slide ${index + 1}`}
+      width={500}
+      height={500}
+    />
+  </div>
+))}
+
+{/* Extra slide */}
+<div className="embla__slide" key="last-slide">
+  <div className="embla__slide__content flex flex-col items-center justify-center h-full text-xl border-2 rounded-3xl">
+    <h2>محصولات بیشتر در راه است</h2>
+  </div>
+</div>
+
         </div>
       </div>
 

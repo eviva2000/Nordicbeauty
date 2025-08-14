@@ -6,12 +6,10 @@ export default function Hero() {
       <div className="first-fold">
         <div className="flex flex-col items-center gap-12 lg:px-20 pt-32 lg:pt-48">
           <h1 className="text-[22px] md:text-[32px]  leading-[1]  text-[#4f2c25]">ZibaNordic</h1>
-          <h4 className="text-[32px] sm:text-[44px] md:text-[52px] lg:text-[100px] mt-2 text-creamy-100 ">
-            منتخبی از برندهای
-            <br />
-            اصیل جهانی
-          </h4>
-          <p className="text-[14px] sm:text-[16px] md:text-[18px] my-6 px-8 xs:px-12 sm:px-16 max-w-2xl ">
+          <h3 className="text-[32px] sm:text-[44px] md:text-[52px] mt-2 text-creamy-100 ">
+            منتخبی از برندهای اصیل جهانی
+          </h3>
+          <p className="text-[14px] sm:text-[16px] md:text-[18px]  px-8 xs:px-12 sm:px-16 max-w-2xl ">
             در زیبانوردیک، ما زیبایی را اتفاقی نمی‌دانیم. با دقت و وسواس، محصولات آرایشی و بهداشتی
             از معتبرترین برندهای جهانی را انتخاب می‌کنیم و مستقیماً از اروپا به ایران می‌رسانیم.
             اینجا، کیفیت، اصالت و سلامت در اولویت‌اند. برای کسانی که زیبایی و سلامتی را جدی می‌گیرند
@@ -22,7 +20,16 @@ export default function Hero() {
           >
             محصولات ما
           </Link>
-          <div className="text-3xl flex justify-center items-center gap-4 mt-12">
+          <div className="text-3xl flex justify-center items-center gap-4 mt-1 sm:mt-12">
+          <a href="mailto:zibanordic@gmail.com">
+              <Image
+                src="email.svg"
+                alt="email-icon"
+                width={36}
+                height={36}
+                className="w-16 h-16 "
+              />
+            </a>
             <a
               href="https://www.instagram.com/zibanordic/"
               target="_blank"
@@ -33,19 +40,11 @@ export default function Hero() {
                 alt="Instagram"
                 width={40}
                 height={40}
-                className="w-10 h-10 md:w-18 md:h-18 lg:w-24 lg:h-24"
+                className="w-16 h-16"
               />
             </a>
 
-            <a href="mailto:zibanordic@gmail.com">
-              <Image
-                src="email.svg"
-                alt="email-icon"
-                width={36}
-                height={36}
-                className="w-[36px] h-[36px] md:w-[66px] md:h-[66px] lg:w-22 lg:h-22"
-              />
-            </a>
+           
           </div>
         </div>
       </div>

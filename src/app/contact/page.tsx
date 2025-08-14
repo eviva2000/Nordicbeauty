@@ -4,7 +4,7 @@ import { MdOutlineEmail } from "react-icons/md";
 export default function Contact() {
   return (
     <section className="relative w-screen h-[calc(100vh-250px)] md:h-[calc(100vh-150px)]">
-      <div className="first-fold px-8 md:px-24 lg:px-32">
+      <div className="first-fold px-8 md:px-24 lg:px-32 flex">
         <div className="flex flex-col items-center translate-y-60 max-w-5xl m-auto border-4 rounded-[50px] p-8 pb-12 xl:pt-16">
           <h2 className="text-xl xl:text-4xl font-bold text-center mb-6 md:mb-12 xl:mb-24">
             تماس با ما
