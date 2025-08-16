@@ -23,20 +23,7 @@ export default function Hero() {
           >
             محصولات ما
           </Link>
-          {/* <div className="text-3xl flex justify-center items-center gap-4 mt-1 sm:mt-12">
-          <a href="mailto:zibanordic@gmail.com">
-          <Mail className="w-6 h-6 text-gray-600"/>
-            </a>
-            <a
-              href="https://www.instagram.com/zibanordic/"
-              target="_blank"
-              rel="noopener noreferrer"
-            >
-            <SiInstagram className="w-6 h-6 text-gray-600"/>
-            </a>
-
-           
-          </div> */}
+       
         </div>
       </div>
     </section>
