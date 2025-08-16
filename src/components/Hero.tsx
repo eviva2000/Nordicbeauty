@@ -21,7 +21,7 @@ export default function Hero() {
             محصولات ما
           </Link>
           <div className="text-3xl flex justify-center items-center gap-4 mt-1 sm:mt-12">
-          <a href="mailto:zibanordic@gmail.com">
+            <a href="mailto:zibanordic@gmail.com">
               <Image
                 src="email.svg"
                 alt="email-icon"
@@ -43,8 +43,6 @@ export default function Hero() {
                 className="w-16 h-16"
               />
             </a>
-
-           
           </div>
         </div>
       </div>
