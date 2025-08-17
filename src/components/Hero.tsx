@@ -1,7 +1,4 @@
 import Link from "next/link";
-import Image from "next/image";
-import { SiInstagram, SiGmail } from "react-icons/si"
-import {Mail} from 'lucide-react';
 
 export default function Hero() {
   return (

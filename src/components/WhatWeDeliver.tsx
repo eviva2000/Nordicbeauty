@@ -4,7 +4,7 @@ export default function WhatWeDeliver() {
 
     return (
         <section className=" py-16 bg-[#2f4f4f] text-white">
-        <div className="container px-4">
+        <div className="container px-4 mx-auto">
             <h2 className="text-3xl font-bold text-center mb-8">زیبایی یعنی حس خوب</h2>
             <p className="text-lg text-center mb-4 max-w-2xl mx-auto">
             زیبایی فقط در ظاهر نیست، در احساسی‌ست که هر روز با خودتان دارید.
