@@ -83,7 +83,7 @@ const Slider: React.FC = () => {
 
   return (
     <div className="embla" id='slider'>
-    <h3 className=" text-3xl mb-12">  محصولات ما</h3>
+    <h3 className=" text-3xl mb-12">  Our Products</h3>
       <div className="embla__viewport" ref={emblaRef}>
         <div className="embla__container">
         {SLIDES.map((index) => (
@@ -101,7 +101,7 @@ const Slider: React.FC = () => {
 {/* Extra slide */}
 <div className="embla__slide" key="last-slide">
   <div className="embla__slide__content flex flex-col items-center justify-center h-full text-xl border-2 rounded-3xl">
-    <h2>محصولات بیشتر در راه است</h2>
+    <h2>More Products Coming Soon</h2>
   </div>
 </div>
 

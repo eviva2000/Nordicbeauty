@@ -1,32 +1,30 @@
 import type { Metadata } from "next";
-import { Geist, Geist_Mono,Lora } from "next/font/google";
-import { nazanin } from "@/fonts";
+import {  Lora ,Poppins} from "next/font/google";
 import "./globals.css";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 
-const lora= Lora({
+const lora = Lora({
   subsets: ["latin"],
   weight: ["400", "700"],
   variable: "--font-lora",
-})
-
-const geistSans = Geist({
-  variable: "--font-geist-sans",
-  subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const poppins = Poppins({
+  variable: "--font-poppins",
   subsets: ["latin"],
+  weight: ["400", "700"],
+  style: ["normal", "italic"],
 });
+
 
 export const metadata: Metadata = {
   title: {
-    default: "ZibaNordic",
-    template: "%s | ZibaNordic",
+    default: "NordicBeauty",
+    template: "%s | NordicBeauty",
   },
-  description: "منتخبی از برندهای آرایشی و بهداشتی اصیل جهانی",
+  description:
+    "Curated selection of authentic global beauty and wellness brands",
   viewport: {
     width: "device-width",
     initialScale: 1,
@@ -41,7 +39,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body
-        className={`${geistSans.variable} ${geistMono.variable} ${nazanin.variable} ${lora.variable} antialiased`}
+        className={`${poppins.variable}  ${lora.variable} antialiased`}
       >
         <Navbar />
         <main className="flex-grow">{children}</main>

@@ -1,30 +1,66 @@
+import React from "react";
+import Image from "next/image";
 import { FaWhatsapp } from "react-icons/fa";
 import { MdOutlineEmail } from "react-icons/md";
 import { SiInstagram } from "react-icons/si"
 
-export default function Contact() {
+interface ContactSplitScreenProps {
+  websiteUrl?: string;
+  socialHandle?: string;
+  backgroundColor?: string;
+}
+
+const ContactSplitScreen = ({
+  backgroundColor = "#3a6351",
+}: ContactSplitScreenProps) => {
   return (
-    <section className="relative w-screen h-[calc(100vh-250px)] md:h-[calc(100vh-150px)] text-[#2f4f4f]">
-      <div className="first-fold-contact px-8 md:px-24 lg:px-32 flex">
-        <div className="flex flex-col items-center  max-w-5xl m-auto border-4 rounded-[50px] p-10 sm:p-22 xl:pt-16">
-          <h2 className="text-xl xl:text-4xl font-bold text-center mb-6 md:mb-12 xl:mb-24">
-            تماس با ما
-          </h2>
-          <div className="flex flex-col items-start text-left gap-4 md:gap-6 xl:gap-8">
-            <div className="flex items-center gap-4 xl:gap-6 font-bold text-[20px] md:text-[30px] xl:text-[40px]">
-              <FaWhatsapp className="w-12 md:w-16 xl:w-24 h-12 md:h-16 xl:h-24 text-[#2f4f4f]" />
-              <p className="text-sm md:text-xl xl:text-4xl">WhatsApp: 093722331122</p>
-            </div>
-            <a
-              href="mailto:zibanordic@gmail.com"
-              className="flex items-center gap-4 xl:gap-6 font-bold text-[20px] md:text-[30px] xl:text-[40px]"
-            >
-              <MdOutlineEmail className="w-12 md:w-16 xl:w-24 h-12 md:h-16 xl:h-24 text-[#2f4f4f]" />
-              <p className="text-sm md:text-xl xl:text-4xl">zibanordic@gmail.com</p>
-            </a>
-          </div>
+    <div className="flex flex-col md:flex-row w-full h-screen bg-white">
+      <div className="w-full md:w-2/3 h-1/2 md:h-full ">
+        <div className="relative w-full h-full">
+          <Image
+            src="/contact.svg"
+            alt="Floral arrangement"
+            className="w-full h-full "
+            width={600}
+            height={600}
+          />
         </div>
       </div>
-    </section>
+
+      <div
+        className="w-full md:w-1/3 h-1/2 md:h-full flex flex-col justify-end items-start p-8 text-white"
+        style={{ backgroundColor }}
+      >
+        <div className="max-w-md ">
+          <h1 className="text-4xl md:text-5xl font-bold mb-6 text-left contact">CONTACT US</h1>
+          <div className="flex flex-col items-start text-left gap-4 md:gap-4">
+          <a
+              href="https://www.instagram.com/zibanordic/"
+              className="flex items-center gap-4 font-bold text-[20px] md:text-[30px] "
+            >
+              <SiInstagram className="w-10 h-10" />
+              <p className="text-sm md:text-xl ">@nordicbeauty</p>
+            </a>
+           
+            <a
+              href="mailto:zibanordic@gmail.com"
+              className="flex items-center gap-4 font-bold text-[20px] md:text-[30px] "
+            >
+              <MdOutlineEmail className="w-11 h-11" />
+              <p className="text-sm md:text-xl ">nordicbeauty@gmail.com</p>
+            </a>
+            <div className="flex items-center gap-4  font-bold text-[20px] md:text-[30px] ">
+              <FaWhatsapp className="w-12 h-12" />
+              <p className="text-sm md:text-xl ">WhatsApp: 045722331122</p>
+            </div>
+
+          </div>
+         
+        </div>
+      </div>
+    </div>
   );
-}
+};
+
+export default ContactSplitScreen;
+

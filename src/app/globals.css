@@ -1,49 +1,55 @@
 @import "tailwindcss/preflight";
 @import "tailwindcss/utilities";
-@import 'tailwindcss';
+@import "tailwindcss";
 
-html{
+html {
   scroll-behavior: smooth;
-
 }
 
 body {
   font-size: 1rem;
-  color:#000;
+  color: #000;
   text-align: center;
 }
 
-h1{
-  font-family: 'Lora', serif;
+h1 {
+  font-family: "Lora", serif;
 }
 
-h3{
-  font-family: 'nazanin', serif;
+h3 {
+  font-family: var(--font-poppins), sans-serif;
   font-weight: 400;
+  font-style: italic;
 }
 
+.contact{
+  font-family: var(--font-poppins), sans-serif;
 
-.first-fold,.first-fold-contact{
+}
+
+.first-fold,
+.first-fold-contact {
   background-repeat: no-repeat;
   background-size: cover;
   height: inherit;
   background-color: #ffffff;
   background-position-y: bottom;
 }
-.first-fold{
-  background-image:url('/products-sandwall-bg.svg');
-
+.first-fold {
+  background-image: url("/products-sandwall-bg.svg");
+  transform: scaleX(-1);
 }
 
-
-
-.main-content{
-  transform:translateY(12rem);
-
+.hero-content {
+  transform: scaleX(-1);
 }
 
-.socials{
-  width:12em
+.main-content {
+  transform: translateY(12rem);
+}
+
+.socials {
+  width: 12em;
 }
 
 .embla__slide__overlay {
@@ -56,7 +62,18 @@ h3{
   border-radius: 1.8rem;
 }
 
-
-
-
-
+.cta::before {
+  content: "";
+  background-color: #ffffff;
+  transition: transform 0.3s cubic-bezier(0.7, 0, 0.2, 1);
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  border-radius: 9999px;
+  border: 1px #ffffff solid;
+}
+.cta:hover::before {
+  transform: translate3d(0, -100%, 0);
+}
