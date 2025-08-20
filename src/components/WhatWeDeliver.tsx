@@ -7,7 +7,7 @@ export default function WhatWeDeliver() {
         <div className="container px-4 mx-auto">
             <h2 className="text-3xl font-bold text-center mb-8">Beauty Means Feeling Good</h2>
             <p className="text-lg text-center mb-4 max-w-2xl mx-auto">
-            Beauty isn't just about appearance, it's about the feeling you have with yourself every day.
+            Beauty isn&apos;t just about appearance, it&apos;s about the feeling you have with yourself every day.
             We at NordicBeauty believe that choosing the right products can awaken your peace, confidence, and natural radiance.
             </p>
             <p className='max-w-2xl mx-auto'>
