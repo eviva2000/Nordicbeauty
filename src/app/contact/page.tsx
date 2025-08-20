@@ -4,15 +4,8 @@ import { FaWhatsapp } from "react-icons/fa";
 import { MdOutlineEmail } from "react-icons/md";
 import { SiInstagram } from "react-icons/si"
 
-interface ContactSplitScreenProps {
-  websiteUrl?: string;
-  socialHandle?: string;
-  backgroundColor?: string;
-}
 
-const ContactSplitScreen = ({
-  backgroundColor = "#3a6351",
-}: ContactSplitScreenProps) => {
+const ContactSplitScreen = () => {
   return (
     <div className="flex flex-col md:flex-row w-full h-screen bg-white">
       <div className="w-full md:w-2/3 h-1/2 md:h-full ">
@@ -28,8 +21,7 @@ const ContactSplitScreen = ({
       </div>
 
       <div
-        className="w-full md:w-1/3 h-1/2 md:h-full flex flex-col justify-end items-start p-8 text-white"
-        style={{ backgroundColor }}
+        className="w-full md:w-1/3 h-1/2 md:h-full flex flex-col justify-end items-start p-8 text-white bg-[#2f4f4f]"
       >
         <div className="max-w-md ">
           <h1 className="text-4xl md:text-5xl font-bold mb-6 text-left contact">CONTACT US</h1>
