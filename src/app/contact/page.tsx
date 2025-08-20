@@ -24,7 +24,7 @@ const ContactSplitScreen = () => {
         className="w-full md:w-1/3 h-1/2 md:h-full flex flex-col justify-end items-start p-8 text-white bg-[#2f4f4f]"
       >
         <div className="max-w-md ">
-          <h1 className="text-4xl md:text-5xl font-bold mb-6 text-left contact">CONTACT US</h1>
+          <h1 className="text-4xl md:text-4xl font-bold mb-6 text-left contact">CONTACT US</h1>
           <div className="flex flex-col items-start text-left gap-4 md:gap-4">
           <a
               href="https://www.instagram.com/zibanordic/"
